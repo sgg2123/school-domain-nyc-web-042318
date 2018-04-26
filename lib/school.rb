@@ -23,10 +23,10 @@ class School
   end
   
   def sort
-    @roster.values
-    
-    # unsorted = @roster[grade]
-    # unsorted.sort
+    vals = @roster.values
+    vals.map do |names|
+      sorted = names.sort
+    end
   end
   
 end
