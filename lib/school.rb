@@ -23,16 +23,9 @@ class School
   end
   
   def sort
-    vals = @roster.values
-    vals.map do |names|
-      sorted = names.sort
+    @roster.each do |k,v|
+      @roster[k] = v.sort
     end
   end
   
 end
-
-
-# @roster["name"] = []
-#     @roster["name"] << new_value_for_value_array
-#     @roster["grade"] = []
-#     @roster["grade"] << new_value_for_value_array
