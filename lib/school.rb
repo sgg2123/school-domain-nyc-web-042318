@@ -23,8 +23,10 @@ class School
   end
   
   def sort
-    unsorted = @roster[grade]
-    unsorted.sort
+    @roster.values
+    
+    # unsorted = @roster[grade]
+    # unsorted.sort
   end
   
 end
